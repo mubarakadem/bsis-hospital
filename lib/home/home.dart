@@ -9,8 +9,14 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Home - BSIS Hospital"),
       ),
-      body: const Center(
-        child: Text("Hello World"),
+      body: Center(
+        child: GridView.extent(
+          maxCrossAxisExtent: 100,
+          padding: const EdgeInsets.all(8),
+          children: [
+
+          ],
+        ),
       ),
     );
   }
