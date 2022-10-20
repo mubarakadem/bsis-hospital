@@ -1,3 +1,4 @@
+import 'package:bsis_hospital/home/feature_card.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -11,10 +12,10 @@ class HomeScreen extends StatelessWidget {
       ),
       body: Center(
         child: GridView.extent(
-          maxCrossAxisExtent: 100,
+          maxCrossAxisExtent: 160,
           padding: const EdgeInsets.all(8),
-          children: [
-
+          children: const [
+            FeatureCard()
           ],
         ),
       ),

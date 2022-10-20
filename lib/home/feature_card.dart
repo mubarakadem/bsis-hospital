@@ -11,13 +11,20 @@ class FeatureCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          IconButton(
-              icon: const Icon(Icons.find_in_page),
-              onPressed: () => {}),
-          const Text(
+        children: const [
+
+          Image(
+            image: AssetImage("images/find.png"),
+            height: 64,
+            width: 64,
+          ),
+          Text(
             "Find Inventory",
             textAlign: TextAlign.center,
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 18
+            ),
           )
         ],
       ),
