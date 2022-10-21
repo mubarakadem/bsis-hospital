@@ -13,9 +13,10 @@ class HomeScreen extends StatelessWidget {
       body: Center(
         child: GridView.extent(
           maxCrossAxisExtent: 160,
+          crossAxisSpacing: 8,
           padding: const EdgeInsets.all(8),
-          children: const [
-            FeatureCard()
+          children: [
+
           ],
         ),
       ),
