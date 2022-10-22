@@ -9,7 +9,7 @@ class FeatureCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
+    return InkWell(
       onTap: onPressed,
       child: Card(
         shape: const RoundedRectangleBorder(
@@ -23,7 +23,7 @@ class FeatureCard extends StatelessWidget {
               children: [
                 const Expanded(
                     child: Image(
-                  image: AssetImage("images/find.png"),
+                  image: AssetImage("assets/images/find.png"),
                   height: 64,
                   width: 64,
                 )),

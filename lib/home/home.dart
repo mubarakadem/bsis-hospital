@@ -16,7 +16,11 @@ class HomeScreen extends StatelessWidget {
           crossAxisSpacing: 8,
           padding: const EdgeInsets.all(8),
           children: [
-
+            FeatureCard(onPressed: () => {
+              debugPrint("Find inventory clicked")
+            }, title: "Find Inventory"),
+            FeatureCard(onPressed: () => {}, title: "View Stock Levels"),
+            FeatureCard(onPressed: () => {}, title: "Manage Orders"),
           ],
         ),
       ),
